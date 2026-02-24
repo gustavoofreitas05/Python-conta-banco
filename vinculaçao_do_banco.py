@@ -25,17 +25,14 @@ class ContaCorrente:
         for operacao, valor in self.extrato:
             print(f"{operacao}: R${valor:.2f}")
 
-# Criar um cliente
 cliente1 = Cliente("Pedro", "123.007.288-00")
 
-# Criar uma conta corrente para o cliente
 conta1 = ContaCorrente(cliente1, 1000)
 
-# Executar algumas operações na conta
 conta1.depositar(1000)
 conta1.sacar(650)
-conta1.sacar(5000)  # Saldo insuficiente
+conta1.sacar(5000) 
 
-# Visualizar saldo e extrato
 print("Saldo atual:", conta1.saldo)
 conta1.visualizar_extrato()
+
